@@ -6,7 +6,7 @@ call `.get()`.
 
 [![CI](https://github.com/saad-mughal435/threadpool/actions/workflows/ci.yml/badge.svg)](https://github.com/saad-mughal435/threadpool/actions/workflows/ci.yml)
 
-## Highlights
+## Design notes
 
 - **One header** (`include/tp/thread_pool.hpp`) — drop it in, link `Threads`.
 - `submit(f, args...)` returns `std::future<result_of_f>` (perfect-forwarded).
@@ -15,7 +15,7 @@ call `.get()`.
   task runs to completion before it returns.
 - Classic mutex + condition-variable design; copy/assignment disabled.
 
-## Use it
+## Usage
 
 ```cpp
 #include <tp/thread_pool.hpp>
